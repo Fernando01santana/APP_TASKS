@@ -1,16 +1,23 @@
-import firebase from 'firebase'
-import "firebase/storage"
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/auth';
+import 'firebase/compat/firestore';
 
-import { initializeApp } from "firebase/app";
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
-  authDomain: process.env.AUTH_DOMAIN,
-  projectId: process.env.PROJECT_ID,
-  storageBucket: process.env.STORAGE_BUCKET,
-  messagingSenderId: process.env.MESSAGING_SENDER_ID,
-  appId: process.env.API_ID
+  apiKey: "AIzaSyDS8eHi6i8ht80a1RcZP9npUte8BJH9CuM",
+  authDomain: "to-do-list-6bc79.firebaseapp.com",
+  projectId: "to-do-list-6bc79",
+  storageBucket: "to-do-list-6bc79.appspot.com",
+  messagingSenderId: "157369763469",
+  appId: "1:157369763469:web:fbcada7fdcccf75c3e04c4"
 };
 
-const app = initializeApp(firebaseConfig);
-const database = firebase.firestore()
+// Use this to initialize the firebase App
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+
+// Use these for db & auth
+const database = firebaseApp.firestore();
+const auth = firebase.auth();
+
 export default database
+
+
