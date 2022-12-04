@@ -10,9 +10,9 @@ const Stack = createStackNavigator()
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName='Task'>
+      <Stack.Navigator initialRouteName="Task">
         <Stack.Screen 
-         name="Activity Manager App"
+         name="Task"
          component={Task}
          options={{
            headerTintColor:"#f92e6a"
