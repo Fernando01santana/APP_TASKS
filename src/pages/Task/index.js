@@ -1,6 +1,5 @@
 import React,{useState,useEffect} from "react"
 import {
-    Safeareaview,
     View, 
     Text,
     TouchableOpacity,
@@ -38,7 +37,7 @@ export default function Task({navigation}){
                     style={styles.deleteTask}
                     onPress={() => deleteTask(item.item.id)}>
                        <FontAwesome
-                        name="star"
+                        name="trash"
                         size={40}
                         color="#F92e6a">
 
