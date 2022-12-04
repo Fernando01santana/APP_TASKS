@@ -25,7 +25,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.fernandostonks.tasks"
+      "permissions": ["ACCESS_BACKGROUND_LOCATION"],
+      "package": "com.fernandostonks.tasks",
     },
     "web": {
       "favicon": "./assets/favicon.png"

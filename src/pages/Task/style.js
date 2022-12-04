@@ -24,24 +24,26 @@ deleteTask:{
 descriptionText:{
     width:"75%",
     alignContent:"flex-start",
-    backgroundColor:"#f5f5f5cf",
+    backgroundColor:"#40375F",
     padding:12,
     paddingHorizontal: 20,
     borderRadius:50,
+    marginTop:5,
     marginBottom: 5,
     marginRight:15,
-    color:"#282b2db5",
+    color:"#fff",
 },
 buttonNewTask:{
     width:60,
     height:60,
-    position:"absolute",
+    position:"relative",
     bottom: 30,
     left:20,
     backgroundColor:"#F92e6a",
     borderRadius:50,
     justifyContent:"center",
-    alignItems: "center"
+    alignItems: "center",
+    marginBottom:20
 }
 })
 

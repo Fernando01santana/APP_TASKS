@@ -60,6 +60,20 @@ export default function Task({navigation}){
             onPress={() => navigation.navigate("New Task")}>
                 <Text style={styles.iconButton}>+</Text>
             </TouchableOpacity>
+
+            <TouchableOpacity 
+            style={styles.buttonNewTask}
+            onPress={() => navigation.navigate("map")}>
+                <Text style={styles.iconButton}>
+                    <Text>
+                        <FontAwesome
+                            name="map"
+                            size={40}
+                            color="#fff">
+                        </FontAwesome>
+                    </Text>
+                </Text>
+            </TouchableOpacity>
         </View>
     )
 }
