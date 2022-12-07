@@ -7,15 +7,16 @@ export default function NewTask({ navigation }){
     const [description, setDescription] = useState(null)
  
     function addTask(){
-        if (description !== "" && description !== ''&& description !== null) {
-            database.collection('Tasks').add({
-                description: description,
-                status: false
-              })
-              navigation.navigate("Minhas atividades");
+        if (description === "" || description === ''|| description === null || description === undefined) {
+            alert("Lembrete vazio!")
+            navigation.navigate("Minhas atividades");
+            return
         }
-        alert("Lembrete vazio!")
-
+        database.collection('Tasks').add({
+            description: description,
+            status: false
+          })
+          navigation.navigate("Minhas atividades");
     }
 
     return (
