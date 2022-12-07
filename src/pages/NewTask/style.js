@@ -17,16 +17,14 @@ const styles = StyleSheet.create({
         color:"#fff"
     },
     buttonNewTask:{
-        width:60,
+        width:"100%",
         height:60,
         position:"absolute",
         bottom:30,
-        left:20,
         backgroundColor:"#F92E6A",
         borderRadius:50,
         justifyContent:"center",
         alignItems:"center"
-
     },
     save:{
         color:"#ffffff",

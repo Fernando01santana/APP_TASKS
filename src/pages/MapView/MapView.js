@@ -18,7 +18,6 @@ const MapLocation = () => {
       }
 
       let location = await Location.getCurrentPositionAsync({});
-      console.log(location);
       setLocation([location.coords]);
     })();
   }, []);
@@ -30,16 +29,13 @@ const MapLocation = () => {
         interval: 1000,
         accuracy: Location.Accuracy.BestForNavigation,
       },
-      (position) => console.log(position),
     );
   };
 
-  const stopTracking = () => {
-    listener.then((listener) => listener.remove());
-  };
+  startTracking()
 
   return (
-    <View style={styles.container}>
+    <View style={styles.container} on>
       <MapView
         onPress={() => {}}
         style={styles.map}
@@ -52,17 +48,6 @@ const MapLocation = () => {
         showsUserLocation
         loadingEnabled
       ></MapView>
-            <TouchableOpacity 
-            style={styles.buttonLocation}
-            onPress={startTracking}>
-                <Text style={styles.label}>START</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity 
-            style={styles.buttonLocation}
-            onPress={stopTracking}>
-                <Text style={styles.label}>STOP</Text>
-            </TouchableOpacity>
     </View>
   );
 };

@@ -12,9 +12,9 @@ const Stack = createStackNavigator()
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Task">
+      <Stack.Navigator initialRouteName="tasks">
         <Stack.Screen 
-         name="Task"
+         name="Minhas atividades"
          component={Task}
          options={{
            headerTintColor:"#f92e6a"
@@ -22,7 +22,7 @@ export default function App() {
         />
 
         <Stack.Screen 
-         name="New Task"
+         name="Nova atividade"
          component={NewTask}
          options={{
            headerTintColor:"#f92e6a"
@@ -30,7 +30,7 @@ export default function App() {
         />
 
         <Stack.Screen 
-         name="Details"
+         name="Detalhe da atividade"
          component={DetailTask}
          options={{
            headerTintColor:"#f92e6a"

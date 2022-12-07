@@ -12,7 +12,7 @@ export default function DetailTask({navigation, route}){
       database.collection("Tasks").doc(id).update({
         description: description,
       })
-      navigation.navigate("Task")
+      navigation.navigate("Minhas atividades")
     }
 
     return(

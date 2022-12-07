@@ -45,7 +45,7 @@ export default function Task({navigation}){
                     </TouchableOpacity>
                     <Text
                      style={styles.descriptionText}
-                     onPress={() => navigation.navigate("Details",{
+                     onPress={() => navigation.navigate("Detalhe da atividade",{
                         id:item.item.id,
                         description:item.item.description
                      })}>
@@ -57,8 +57,8 @@ export default function Task({navigation}){
             />
             <TouchableOpacity 
             style={styles.buttonNewTask}
-            onPress={() => navigation.navigate("New Task")}>
-                <Text style={styles.iconButton}>+</Text>
+            onPress={() => navigation.navigate("Nova atividade")}>
+                <Text style={styles.iconButton}>Nova atividade</Text>
             </TouchableOpacity>
 
             <TouchableOpacity 
@@ -66,11 +66,7 @@ export default function Task({navigation}){
             onPress={() => navigation.navigate("map")}>
                 <Text style={styles.iconButton}>
                     <Text>
-                        <FontAwesome
-                            name="map"
-                            size={40}
-                            color="#fff">
-                        </FontAwesome>
+                        Onde estou?
                     </Text>
                 </Text>
             </TouchableOpacity>

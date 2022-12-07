@@ -34,11 +34,11 @@ descriptionText:{
     color:"#fff",
 },
 buttonNewTask:{
-    width:60,
+    padding:10,
+    width:"100%",
     height:60,
     position:"relative",
     bottom: 30,
-    left:20,
     backgroundColor:"#F92e6a",
     borderRadius:50,
     justifyContent:"center",
